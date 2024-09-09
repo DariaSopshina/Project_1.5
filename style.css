@@ -25,7 +25,6 @@ body {
     background-color: #F8F8F8;
 }
 
-
 .brands__list {
     margin: 0 16px;
     gap: 16px;
@@ -41,7 +40,8 @@ body {
 
 .brands__item {
     padding: 0 16px;
-    width: 240px;
+    min-width: 224px;
+    width: 224px;
     height: 72px;
     display: flex;
     justify-content: space-between;
@@ -122,13 +122,9 @@ body {
         row-gap: 16px;
     }
 
-    .brands__readnext__list {
-        margin-left: 16px;
-    }
-
     .brands__readnext__list>.brands__item,
     .brands__item {
-        max-width: 224px;
+        width: 240px;
     }
 
     .brands__logo {
@@ -144,6 +140,7 @@ body {
 
     .brands__readnext {
         display: block;
+        margin: 0 16px;
     }
 
     .brands__readnext__button {
@@ -167,23 +164,13 @@ body {
 
 @media (min-width: 1120px) {
 
-    .brands__list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 32px;
-    }
-
+    .brands__list,
     .brands__readnext__list {
         grid-template-columns: repeat(4, 1fr);
+        column-gap: 32px;
     }
 
     .brands__list>.brands__item_hidden {
         display: flex;
     }
-
-    .brands__readnext__list>.brands__item,
-    .brands__item {
-        max-width: 240px;
-    }
-
 }
