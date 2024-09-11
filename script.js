@@ -15,3 +15,4 @@ toggleButton.addEventListener('click', function () {
         arrowIcon.style.transform = 'rotate(0deg)';
     }
 });
+
